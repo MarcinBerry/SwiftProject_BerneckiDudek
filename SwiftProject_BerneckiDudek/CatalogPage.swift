@@ -13,17 +13,11 @@ struct Car: Hashable{
     var Pojemnosc: String
     var nadwozie: String
     var dataprodukcji: String
+    var img: String?
 }
 struct CarsView: View {
-    @State private var cars = [
-        Car(Nazwa: "Audi A3", Pojemnosc:"1996cm3", nadwozie: "Hatchback", dataprodukcji: "1999"),
-        Car(Nazwa: "BMW E46", Pojemnosc:"1215cm3", nadwozie: "Coupe", dataprodukcji: "2001"),
-        Car(Nazwa: "Opel Astra", Pojemnosc:"2624cm3", nadwozie: "Sedan", dataprodukcji: "2004"),
-        Car(Nazwa: "Mercedes C63 AMG", Pojemnosc:"6134cm3", nadwozie: "SUV", dataprodukcji: "2006"),
-        Car(Nazwa: "Toyota Corolla", Pojemnosc:"4123cm3", nadwozie: "Hatchback", dataprodukcji: "2010")
-    ]
-    
-    //@State private var text: String = ""
+    @State var cars: [Car] = []
+    var onAdd: (Car) -> Void
     @State var addCar = false
     @State var addCarName: String = ""
     @State var addCarPojemnosc: String = ""
@@ -59,6 +53,7 @@ struct CarsView: View {
                         return
                     }
                     self.cars.append(Car(Nazwa: addCarName, Pojemnosc: addCarPojemnosc, nadwozie: addCarNadwozie, dataprodukcji: addCarRocznik))
+                    self.onAdd(Car(Nazwa: addCarName, Pojemnosc: addCarPojemnosc, nadwozie: addCarNadwozie, dataprodukcji: addCarRocznik))
                     
                     self.addCar.toggle()
                     
