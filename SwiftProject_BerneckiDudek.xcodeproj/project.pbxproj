@@ -104,9 +104,9 @@
 				D382923A280DB2890094DB5F /* ContentView.swift */,
 				D382923C280DB28B0094DB5F /* Assets.xcassets */,
 				D382923E280DB28B0094DB5F /* Preview Content */,
-				D3829262280DB8930094DB5F /* SubPage.swift */,
 				D3829264280DB9A00094DB5F /* NavComponent.swift */,
 				D3829266280DBACD0094DB5F /* CatalogPage.swift */,
+				D3829262280DB8930094DB5F /* SubPage.swift */,
 			);
 			path = SwiftProject_BerneckiDudek;
 			sourceTree = "<group>";
