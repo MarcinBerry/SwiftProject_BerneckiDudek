@@ -16,7 +16,6 @@
 		D3829254280DB28B0094DB5F /* SwiftProject_BerneckiDudekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3829253280DB28B0094DB5F /* SwiftProject_BerneckiDudekUITests.swift */; };
 		D3829256280DB28B0094DB5F /* SwiftProject_BerneckiDudekUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3829255280DB28B0094DB5F /* SwiftProject_BerneckiDudekUITestsLaunchTests.swift */; };
 		D3829263280DB8930094DB5F /* SubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3829262280DB8930094DB5F /* SubPage.swift */; };
-		D3829265280DB9A00094DB5F /* NavComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3829264280DB9A00094DB5F /* NavComponent.swift */; };
 		D3829267280DBACD0094DB5F /* CatalogPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3829266280DBACD0094DB5F /* CatalogPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +49,6 @@
 		D3829253280DB28B0094DB5F /* SwiftProject_BerneckiDudekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProject_BerneckiDudekUITests.swift; sourceTree = "<group>"; };
 		D3829255280DB28B0094DB5F /* SwiftProject_BerneckiDudekUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftProject_BerneckiDudekUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D3829262280DB8930094DB5F /* SubPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubPage.swift; sourceTree = "<group>"; };
-		D3829264280DB9A00094DB5F /* NavComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavComponent.swift; sourceTree = "<group>"; };
 		D3829266280DBACD0094DB5F /* CatalogPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +104,6 @@
 				D382923A280DB2890094DB5F /* ContentView.swift */,
 				D382923C280DB28B0094DB5F /* Assets.xcassets */,
 				D382923E280DB28B0094DB5F /* Preview Content */,
-				D3829264280DB9A00094DB5F /* NavComponent.swift */,
 				D3829266280DBACD0094DB5F /* CatalogPage.swift */,
 				2F0A07CC280F0D8A0083FC78 /* AddItemAlert.swift */,
 				D3829262280DB8930094DB5F /* SubPage.swift */,
@@ -270,7 +267,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D382923B280DB2890094DB5F /* ContentView.swift in Sources */,
-				D3829265280DB9A00094DB5F /* NavComponent.swift in Sources */,
 				D3829239280DB2890094DB5F /* SwiftProject_BerneckiDudekApp.swift in Sources */,
 				2F0A07CD280F0D8A0083FC78 /* AddItemAlert.swift in Sources */,
 				D3829263280DB8930094DB5F /* SubPage.swift in Sources */,

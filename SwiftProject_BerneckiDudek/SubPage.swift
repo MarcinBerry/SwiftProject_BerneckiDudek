@@ -16,10 +16,11 @@ struct SubPage: View {
     var rokProdukcji: String
     var body: some View {
             VStack {
-                (img != nil) ? Image(img!).resizable()
-                .aspectRatio(contentMode: .fit) : nil
+                Image(img!)
+//                (img != nil) ? Image(img!).resizable()
+//                .aspectRatio(contentMode: .fit) : nil
                 Text("Marka: \(marka)")
-                Text("Pojemnosc: \(pojemonsc)")
+                Text("Pojemnosc: \(pojemonsc) [cm3]")
                 Text("Typ: \(typ)")
                 Text("Rok produkcji: \(rokProdukcji)")
             }

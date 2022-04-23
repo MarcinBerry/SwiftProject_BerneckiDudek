@@ -9,34 +9,33 @@ import SwiftUI
 
 
 struct ContentView: View {
+    @State private var cars = [
+        Car(img: "audi", Nazwa: "Audi A3", Pojemnosc:"2000", nadwozie: "Hatchback", dataprodukcji: "1999"),
+        Car(img: "bmw",Nazwa: "BMW E46", Pojemnosc:"2500", nadwozie: "Coupe", dataprodukcji: "2001"),
+        Car(img: "opel",Nazwa: "Opel Astra", Pojemnosc:"1600", nadwozie: "Sedan", dataprodukcji: "2004"),
+        Car(img: "mercedes", Nazwa: "Mercedes C63 AMG", Pojemnosc:"6300", nadwozie: "Coupe", dataprodukcji: "2016"),
+        Car(img: "toyota",Nazwa: "Toyota Corolla", Pojemnosc:"1800", nadwozie: "Hatchback", dataprodukcji: "2010")
+    ]
     var body: some View {
         NavigationView{
             VStack(alignment: .center) {
-                NavComponent()
                 Spacer()
-                Text("Komis samochodowy Kacpero i Marcino")
+                Image("logodealer")
+                Text("Komis samochodowy Kacpero&Marcino")
                 Text("ul. Kaczadafiego 96,")
                 Text("21-010 Warszawa")
                 Spacer()
             }
-            
-            //                VStack(alignment: .center){
-            //                    NavigationLink(destination: SubPage(img: "BMW",marka: "BMW", pojemonsc: "3.0", typ: "sedan", rokProdukcji: "2007"), label: {
-            //                        Text("BMW").frame(width: 375, height: 50).background(Color.gray)
-            //                    })
-            //                    NavigationLink(destination: SubPage(marka: "Audi", pojemonsc: "2.0", typ: "kombi", rokProdukcji: "2010"), label: {
-            //                        Text("Audi").frame(width: 375, height: 50).background(Color.green)
-            //                    })
-            //                    NavigationLink(destination: SubPage(marka: "Mercedes", pojemonsc: "1.0", typ: "cabrio", rokProdukcji: "2004"), label: {
-            //                        Text("Mercedes").frame(width: 375, height: 50).background(Color.yellow)
-            //                    })
-            //                    Spacer()
-            //                }
+            .navigationTitle("K&M")
+            .navigationBarItems(trailing: NavigationLink(destination: CarsView(cars: cars, onAdd: { item in
+                self.cars.append(item)
+            }), label: {
+                Text("Oferta").frame(width: 60, height: 50)
+            }))
+            .background(Image("backphoto"))
+            .foregroundColor(Color.white)
         }
-        
-        
     }
 }
-
 
 
