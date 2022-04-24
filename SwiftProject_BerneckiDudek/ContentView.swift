@@ -26,7 +26,9 @@ struct ContentView: View {
                 Text("21-010 Warszawa")
                 Spacer()
             }
+
             .navigationTitle("K&M")
+            .navigationTitle("Kacpero&Marcino")
             .navigationBarItems(trailing: NavigationLink(destination: CarsView(cars: cars, onAdd: { item in
                 self.cars.append(item)
             }), label: {

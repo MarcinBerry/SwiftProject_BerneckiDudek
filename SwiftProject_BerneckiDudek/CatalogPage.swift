@@ -14,6 +14,7 @@ struct Car: Hashable{
     var Pojemnosc: String
     var nadwozie: String
     var dataprodukcji: String
+    var img: String?
 }
 struct CarsView: View {
     @State var cars: [Car] = []
